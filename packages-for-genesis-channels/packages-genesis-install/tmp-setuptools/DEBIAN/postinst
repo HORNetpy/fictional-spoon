@@ -1,0 +1,17 @@
+#!/bin/bash
+
+echo "Installing pip and setuptools..."
+
+echo "Installing setuptools..."
+tar xvf /tmp/setuptools-36.0.1.tar.gz
+sudo python setup.py install
+sudo rm -r bootstrap.py CHANGES.rst conftest.py docs easy_install.py launcher.c LICENSE MANIFEST.in msvc-build-launcher.cmd pavement.py PKG-INFO pkg_resources pytest.ini README.rst setup.cfg setup.py setuptools setuptools.egg-info tests tox.ini
+echo "Installing setuptools complete"
+
+echo "Installing pip..."
+tar xvf /tmp/pip-9.0.1.tar.gz
+sudo python setup.py install
+sudo rm -r AUTHORS.txt build CHANGES.txt dist docs LICENSE.txt MANIFEST.in pip pip.egg-info PKG-INFO README.rst setup.cfg setup.py
+echo "Installing pip complete"
+
+echo "Installing pip and setuptools complete"

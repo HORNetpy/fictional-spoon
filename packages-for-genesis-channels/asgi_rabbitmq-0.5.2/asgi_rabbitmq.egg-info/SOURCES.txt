@@ -1,0 +1,15 @@
+CHANGELOG.rst
+LICENSE
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+asgi_rabbitmq/__init__.py
+asgi_rabbitmq/core.py
+asgi_rabbitmq/local.py
+asgi_rabbitmq/test.py
+asgi_rabbitmq.egg-info/PKG-INFO
+asgi_rabbitmq.egg-info/SOURCES.txt
+asgi_rabbitmq.egg-info/dependency_links.txt
+asgi_rabbitmq.egg-info/requires.txt
+asgi_rabbitmq.egg-info/top_level.txt

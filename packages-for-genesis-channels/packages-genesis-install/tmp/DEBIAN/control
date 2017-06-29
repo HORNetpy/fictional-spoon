@@ -1,0 +1,10 @@
+Package: example
+Version: 1-1
+Architecture: amd64
+Maintainer: john <john@astra>
+Installed-Size: 26
+Section: unknown
+Priority: extra
+Homepage: <insert the upstream URL, if relevant>
+Description: <insert up to 60 chars description>
+ <insert long description, indented with spaces>

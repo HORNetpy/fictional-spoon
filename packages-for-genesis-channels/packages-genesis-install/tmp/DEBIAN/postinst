@@ -1,0 +1,39 @@
+#!/bin/bash
+
+echo "Installing asgi-rabbitmq..."
+echo "Installing msgpack-python..."
+tar xvf /tmp/msgpack-python-0.4.8.tar.gz
+sudo python setup.py install
+sudo rm -r build COPYING dist msgpack msgpack_python.egg-info PKG-INFO README.rst setup.py test
+echo "Installing msgpack-python complete"
+
+echo "Installing u-msgpack-python..."
+tar xvf /tmp/u-msgpack-python-2.4.1.tar.gz
+sudo python setup.py install
+sudo rm -r LICENSE MANIFEST.in PKG-INFO setup.cfg setup.py test_umsgpack.py umsgpack.py u_msgpack_python.egg-info
+echo "Installing u-msgpack-python complete"
+
+echo "Installing pika..."
+tar xvf /tmp/pika-0.10.0.tar.gz
+sudo python setup.py install
+sudo rm -r build dist LICENSE MANIFEST.in pika pika.egg-info PKG-INFO README.rst setup.cfg setup.py
+echo "Installing pika complete"
+
+echo "Installing futures..."
+tar xvf /tmp/futures-3.1.1.tar.gz
+sudo python setup.py install
+sudo rm -r build  CHANGES  concurrent  crawl.py  dist  docs  futures.egg-info  LICENSE  MANIFEST.in  PKG-INFO  primes.py  setup.cfg  setup.py  test_futures.py  tox.ini
+echo "Installing futures complete"
+
+echo "Installing cached_property..."
+tar xvf /tmp/cached-property-1.3.0.tar.gz
+sudo python setup.py install
+sudo rm -r AUTHORS.rst build cached_property.egg-info cached_property.py CONTRIBUTING.rst dist HISTORY.rst LICENSE MANIFEST.in PKG-INFO README.rst setup.cfg setup.py tests
+echo "Installing cached_property complete"
+
+echo "Installing asgi_rabbitmq..."
+tar xvf /tmp/asgi_rabbitmq-0.5.2.tar.gz
+sudo python setup.py install
+sudo rm -r asgi_rabbitmq asgi_rabbitmq.egg-info CHANGELOG.rst LICENSE MANIFEST.in PKG-INFO README.rst setup.cfg setup.py
+echo "Installing asgi_rabbitmq complete"
+echo "Installing asgi_rabbitmq-package.deb complete"
